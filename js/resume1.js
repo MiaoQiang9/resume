@@ -1,4 +1,5 @@
 window.onload = function(){
+	judgeBrowser();	//判断浏览器确定是否隐藏
 	mq();	//点击导航事件
 	navSlide();		//导航滑动
 	countNav();		//计算滑动导航位置和大小
@@ -15,6 +16,14 @@ window.onload = function(){
 	skillHover();	//技能鼠标悬停事件
 	proClickMouseover();	//项目click,mouseover事件
 	
+}
+
+//判断浏览器确定是否隐藏
+function judgeBrowser(){
+	var browserName = navigator.appName;
+	if(browserName == "Netscape"){
+		$(".curtain").css("display","none");
+	}
 }
 
 //项目click,mouseover事件

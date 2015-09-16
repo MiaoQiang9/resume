@@ -30,7 +30,7 @@ a{
 	opacity:0.95;
 	color: white;
 	z-index: 10000;
-	display: block;
+	display: none;
 }
 
 /*选择导航*/

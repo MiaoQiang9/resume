@@ -21,8 +21,8 @@ window.onload = function(){
 //判断浏览器确定是否隐藏
 function judgeBrowser(){
 	var browserName = navigator.appName;
-	if(browserName == "Netscape"){
-		$(".curtain").css("display","none");
+	if(browserName != "Netscape"){
+		$(".curtain").css("display","block");
 	}
 }
 
